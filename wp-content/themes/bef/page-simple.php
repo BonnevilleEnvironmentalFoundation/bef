@@ -22,7 +22,7 @@ Template Name: Page - Simple
 <!--[if !IE]><!-->
 <html lang="en" dir="ltr">
 <!--<![endif]-->
-SIMPLE
+
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
