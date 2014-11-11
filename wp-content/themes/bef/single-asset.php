@@ -1,0 +1,1 @@
+<?php wp_redirect('http://www.b-e-f.org', 301); exit; ?>

@@ -1,0 +1,32 @@
+/* @license
+ * MyFonts Webfont Build ID 2441870, 2013-01-04T13:26:50-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Dezen Pro Medium by DizajnDesign
+ * URL: http://www.myfonts.com/fonts/dizajndesign/dezen-pro/medium/
+ * 
+ * Webfont: Dezen Pro Bold by DizajnDesign
+ * URL: http://www.myfonts.com/fonts/dizajndesign/dezen-pro/bold/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2441870
+ * Webfonts copyright: Copyright (c) 2007 by Jan Filipek. All rights reserved.
+ * 
+ * © 2013 Bitstream Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/25428e");
+
+  
+@font-face {font-family: 'DezenProMedium';src: url('webfonts/25428E_0_0.eot');src: url('webfonts/25428E_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/25428E_0_0.woff') format('woff'),url('webfonts/25428E_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'DezenProBold';src: url('webfonts/25428E_1_0.eot');src: url('webfonts/25428E_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/25428E_1_0.woff') format('woff'),url('webfonts/25428E_1_0.ttf') format('truetype');}
+ 
