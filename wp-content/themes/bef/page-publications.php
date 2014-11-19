@@ -5,14 +5,7 @@ Template Name: Page - Publications
 ?>
 <?php get_header(); ?>
 
-<div class="breadcrumbs sixteen columns">
-		<p>
-			<?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-		</p>
-	</div>
+<?php get_template_part('partials/breadcrumbs'); ?>
 	<div class="four columns subnav">
 		<?php wp_nav_menu( array ('menu' => 'Learn', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
 	</div>
@@ -102,5 +95,5 @@ Template Name: Page - Publications
 		</div>
 		
 	</div>
-	<?php get_sidebar();?>
-	<?php get_footer(); ?>
+	<?php get_template_part('partials/sidebar'); ?>
+	<?php get_template_part('partials/footer'); ?>

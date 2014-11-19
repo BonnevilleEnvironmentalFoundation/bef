@@ -1,13 +1,4 @@
-<?php
-/**
- * The template for displaying attachments.
- *
- * @package WordPress
- * @subpackage Starkers
- * @since Starkers 3.0
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 <div class="eight offset-by-four columns">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
@@ -90,4 +81,4 @@ get_header(); ?>
 
 </div>
 
-<?php get_footer(); ?>
+<?php get_template_part('partials/footer'); ?>

@@ -1,14 +1,7 @@
 <?php get_header('solutions'); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<div class="breadcrumbs sixteen columns">
-		<p>
-			<?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-		</p>
-	</div>
+<?php get_template_part('partials/breadcrumbs'); ?>
 	<div class="four columns">
 	<div class="four columns alpha omega subnav">
 		<?php wp_nav_menu( array ('menu' => 'WRC', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
@@ -41,5 +34,5 @@
 	</div>
 	<?php endwhile; ?>
 	<?php endif;?>
-	<?php get_sidebar();?>
-	<?php get_footer(); ?>
+	<?php get_template_part('partials/sidebar'); ?>
+	<?php get_template_part('partials/footer'); ?>

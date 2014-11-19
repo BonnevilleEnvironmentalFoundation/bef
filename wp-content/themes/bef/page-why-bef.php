@@ -5,14 +5,7 @@ Template Name: Page - Why BEF
 ?>
 <?php get_header(); ?>
 
-<div class="breadcrumbs sixteen columns">
-		<p>
-			<?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-		</p>
-	</div>
+<?php get_template_part('partials/breadcrumbs'); ?>
 	<div class="four columns subnav">
 		<h3>WHY BEF</h3>
 		<?php  wp_nav_menu( array ('menu' => 'Why BEF', 'container' => '','menu_class' => 'sub-nav','depth' => 0) );?>
@@ -33,7 +26,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 		<?php endif;?>
 		<?php wp_reset_query(); ?>
 	</div>
-	<?php get_sidebar();?>
+	<?php get_template_part('partials/sidebar'); ?>
 	<?php 
 } else { ?>
 	<div class="eight columns">
@@ -43,6 +36,6 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 		<?php endif;?>
 		<?php wp_reset_query(); ?>
 	</div>
-	<?php get_sidebar();?>
+	<?php get_template_part('partials/sidebar'); ?>
 	<?php }?>
-	<?php get_footer(); ?>
+	<?php get_template_part('partials/footer'); ?>

@@ -5,19 +5,8 @@ Template Name: Page - Project Portfolio - Water Potential
 ?>
 <?php get_header('solutions'); ?>
 
-<div class="breadcrumbs sixteen columns">
-		<p>
-			<?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-		</p>
-	</div>
-<?php if (get_field('nav_menu')):?>
-<div class="four columns subnav">
-	<?php the_field('nav_menu'); else:?>
-	<div class="four columns"> <?php echo '&nbsp;';
-		endif;?> </div>
+<?php get_template_part('partials/breadcrumbs'); ?>
+<?php get_template_part('partials/subnav'); ?>
 	
 	<div class="eight columns">
 
@@ -69,5 +58,5 @@ if ($image):?>
 <?php wp_reset_query(); ?>
 		
 	</div>
-	<?php get_sidebar();?>
-	<?php get_footer(); ?>
+	<?php get_template_part('partials/sidebar'); ?>
+	<?php get_template_part('partials/footer'); ?>

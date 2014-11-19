@@ -5,14 +5,7 @@ Template Name: Page - Our Solutions No SIdebar
 ?>
 <?php get_header('solutions'); ?>
 
-<div class="breadcrumbs sixteen columns">
-		<p>
-			<?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-		</p>
-	</div>
+<?php get_template_part('partials/breadcrumbs'); ?>
 	<?php 
 if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
  ?>
@@ -29,7 +22,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 		<?php endif;?>
 		<?php wp_reset_query(); ?>
 	</div>
-	<?php get_sidebar();?>
+	<?php get_template_part('partials/sidebar'); ?>
 	<?php 
 } else { ?>
 	<div class="eight offset-by-four columns">
@@ -39,6 +32,6 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 		<?php endif;?>
 		<?php wp_reset_query(); ?>
 	</div>
-	<?php get_sidebar();?>
+	<?php get_template_part('partials/sidebar'); ?>
 	<?php }?>
-	<?php get_footer(); ?>
+	<?php get_template_part('partials/footer'); ?>

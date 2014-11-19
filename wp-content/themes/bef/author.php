@@ -1,13 +1,4 @@
-<?php
-/**
- * The template for displaying Author Archive pages.
- *
- * @package WordPress
- * @subpackage Starkers
- * @since Starkers 3.0
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <?php
 	/* Queue the first post, that way we know who
@@ -47,5 +38,5 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 	 get_template_part( 'loop', 'author' );
 ?>
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_template_part('partials/sidebar'); ?>
+<?php get_template_part('partials/footer'); ?>

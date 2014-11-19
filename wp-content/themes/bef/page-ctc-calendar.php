@@ -10,12 +10,7 @@ Template Name: CTC Calendar
 
 <?php get_header(); ?>
 
-<div class="breadcrumbs sixteen columns">
-<p>    <?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?></p>
-</div>
+<?php get_template_part('partials/breadcrumbs'); ?>
 
 <div class="sixteen columns ctc-modal-display" id="primary">
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -31,5 +26,5 @@ Template Name: CTC Calendar
 
 
 
-<?php get_footer(); ?>
+<?php get_template_part('partials/footer'); ?>
 

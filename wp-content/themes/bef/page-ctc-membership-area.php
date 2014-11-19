@@ -5,13 +5,7 @@ Template Name: Page - CTC Membership Area
 ?>
 <?php get_header(); ?>
 
-<div class="breadcrumbs sixteen columns">
-	<p>
-		<?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?></p>
-</div>
+<?php get_template_part('partials/breadcrumbs'); ?>
 
 	<div class="four columns">
 	<div class="sidebar-callout request-consultation logout">
@@ -257,6 +251,6 @@ if ($sharethis) {
 <?php get_sidebar('ctcmember');?>
 
 
-<?php get_footer(); ?>
+<?php get_template_part('partials/footer'); ?>
 <div class="clearfix"></div>
 </div>

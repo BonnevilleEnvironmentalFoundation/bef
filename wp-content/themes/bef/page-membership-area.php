@@ -5,19 +5,8 @@ Template Name: Page - Membership Area
 ?>
 <?php get_header(); ?>
 
-<div class="breadcrumbs sixteen columns">
-	<p>
-		<?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?></p>
-</div>
-<?php if (get_field('nav_menu')):?>
-<div class="four columns subnav">
-	<?php the_field('nav_menu'); else:?>
-	<div class="four columns">
-		<?php echo '&nbsp;';
-		endif;?></div>
+<?php get_template_part('partials/breadcrumbs'); ?>
+<?php get_template_part('partials/subnav'); ?>
 	<?php 
 if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
  ?>
@@ -35,7 +24,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 		<?php edit_post_link( __( 'Edit Page'), '<span class="edit-link">', '</span>
 	' ); ?>
 </div>
-<?php get_sidebar();?>
+<?php get_template_part('partials/sidebar'); ?>
 <?php 
 } else { ?>
 <div class="eight columns">
@@ -131,6 +120,6 @@ if ($sharethis) {
 <?php get_sidebar('membership');?>
 <?php }?>
 
-<?php get_footer(); ?>
+<?php get_template_part('partials/footer'); ?>
 <div class="clearfix"></div>
 </div>

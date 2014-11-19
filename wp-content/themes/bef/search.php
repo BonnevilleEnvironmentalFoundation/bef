@@ -1,10 +1,4 @@
-<?php
-/**
- * @package WordPress
- * @subpackage Starkers
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 	<?php if (have_posts()) : ?>
 <div id="main-content" class="grid_12">
@@ -33,4 +27,4 @@ get_header(); ?>
 	<?php endif; ?>
 
 
-<?php get_footer(); ?>
+<?php get_template_part('partials/footer'); ?>

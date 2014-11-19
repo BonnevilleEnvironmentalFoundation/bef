@@ -1,13 +1,5 @@
-<?php
-
-
-get_header();
-?>
-<?php if (get_field('nav_menu')):?>
-<div class="four columns subnav">
-	<?php the_field('nav_menu'); else:?>
-	<div class="four columns"> <?php echo '&nbsp;';
-		endif;?> </div>
+<?php get_header();?>
+<?php get_template_part('partials/subnav'); ?>
 		<div class="eight columns">
 		<br />
 <br />
@@ -15,5 +7,5 @@ get_header();
 <br />
 <p><a href="<?php bloginfo('url');?>/sitemap/">View our Sitemap</a> and see if you can find the page you're looking for.</p>
 </div>
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_template_part('partials/sidebar'); ?>
+<?php get_template_part('partials/footer'); ?>

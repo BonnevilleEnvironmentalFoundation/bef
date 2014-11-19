@@ -5,14 +5,7 @@ Template Name: Page - Project Portfolio
 ?>
 <?php get_header('solutions'); ?>
 
-<div class="breadcrumbs sixteen columns">
-		<p>
-			<?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-		</p>
-	</div>
+<?php get_template_part('partials/breadcrumbs'); ?>
 
 	<div class="four columns subnav">
 		<?php wp_nav_menu( array ('menu' => 'REC', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
@@ -67,5 +60,5 @@ if ($image):?>
 <?php wp_reset_query(); ?>
 		
 	</div>
-	<?php get_sidebar();?>
-	<?php get_footer(); ?>
+	<?php get_template_part('partials/sidebar'); ?>
+	<?php get_template_part('partials/footer'); ?>
