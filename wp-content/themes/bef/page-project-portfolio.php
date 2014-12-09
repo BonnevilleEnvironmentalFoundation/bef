@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page - Project Portfolio
+Template Name: Page - Renewable Energy Projects
 */
 ?>
 <?php get_header('solutions'); ?>
@@ -27,7 +27,8 @@ Template Name: Page - Project Portfolio
    'orderby' => 'meta_value_num',
 	 'meta_key' => 'bgmp_zIndex',
    'order' => 'DESC',
-   'posts_per_page' => 99
+   	 'bgmp-category' => 'carbon',
+   'posts_per_page' => -1
 )); ?>
 
 <p></p>

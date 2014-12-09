@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page - Audio and Video
+Template Name: Page - Video Library
 */
 ?>
 <?php get_header(''); ?>
@@ -15,29 +15,8 @@ Template Name: Page - Audio and Video
 		<?php endwhile; ?>
 		<?php endif;?>
 		<?php wp_reset_query(); ?>
-		<ul class="bef-tabs tab-nav">
-			<li><a href="#tab1">Audio</a></li>
-			<li><a href="#tab2">Video</a></li>
-		</ul>
-		<div class="profile tab-content" role="main" id="tab1">
-			<?php /* $posts = new WP_Query(array( 
-   'post_type' => 'audio',
-   'orderby' => 'date',
-   'order' => 'DESC',
-   'posts_per_page' => 99
-));  
 
-if ( $posts->have_posts() ) : while ( $posts->have_posts() ) : $posts->the_post(); */ ?>
-			<div class="row av-entry"><!-- <img src="<?php bloginfo('template_directory');?>/images/audio-video-arrow.jpg" width="30" height="30" alt="" />
-				<p> <a href="#"><?php the_title();?></a></p> -->
-				
-				<h3>We will be building out our library of audio addressing commonly asked questions and topics important to our partners over the year. Please check back or subscribe to our BEF eBulletin to be apprised as new audio is added to our website.</h3>
-				
-			</div>
-
-			<?php wp_reset_query(); ?>
-		</div>
-		<div class="profile tab-content" role="main" id="tab2">
+		<div class="profile tab-content">
 			<?php $posts = new WP_Query(array( 
    'post_type' => 'video',
    'orderby' => 'date',
@@ -45,12 +24,20 @@ if ( $posts->have_posts() ) : while ( $posts->have_posts() ) : $posts->the_post(
    'posts_per_page' => 99
 )); ?>
 			<?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ) : $posts->the_post(); ?>
-			<div class="row av-entry"> <img src="<?php bloginfo('template_directory');?>/images/audio-video-arrow.jpg" width="30" height="30" alt="" />
-				<p> <a class="fancybox-media" href="<?php the_field('url');?>"><?php the_title();?></a></p>
+			<div class="row project-entry"> 
+				<div class="project-image">
+					<?php if(has_post_thumbnail()) : the_post_thumbnail(); else: echo 'Featured Image'; endif; ?>
+				</div>
+				<div class="project-info">
+					<h4><?php echo get_field('title') ?></h4>
+					<?php echo get_field('description') ?>
+				</div>
+				<p><a target="_blank" href="<?php the_field('url');?>" class="button">Go To Link</a></p>
+				<span class='st_sharethis' st_title='<?php the_field('title', $post_object->ID); ?>' st_url='<?php the_field('file_url', $post_object->ID); ?>' displayText='ShareThis'></span> 
 			</div>
 			<?php endwhile; ?>
 			<?php endif;?>
-			<?php wp_reset_query(); ?>
+		<?php wp_reset_query(); ?>
 		</div>
 	</div>
 	<?php get_template_part('partials/sidebar'); ?>
