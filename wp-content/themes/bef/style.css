@@ -1446,7 +1446,7 @@ nav.main-nav {
       -ms-transition: all 0.2s;
       -o-transition: all 0.2s;
       transition: all 0.2s; }
-      nav.main-nav ul li > a {
+      nav.main-nav ul li a {
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
         -ms-transition: all 0.2s;
@@ -1461,10 +1461,8 @@ nav.main-nav {
         padding: 15px 15px 17px 15px;
         -webkit-border-radius: 10px 10px 0 0;
         -moz-border-radius: 10px 10px 0 0;
-        border-radius: 10px 10px 0 0; }
-        nav.main-nav ul li > a:hover {
-          border-color: #ccc;
-          text-decoration: none; }
+        border-radius: 10px 10px 0 0;
+        text-decoration: none; }
       nav.main-nav ul li ul {
         position: absolute;
         top: 33px;
@@ -1502,6 +1500,9 @@ nav.main-nav {
         visibility: visible; }
       nav.main-nav ul li:last-child {
         margin: 0; }
+      nav.main-nav ul li:hover > a {
+        color: #333;
+        background: #f3f1ee; }
 
 /* Sub Menu Headers */
 /* Sub Nav */

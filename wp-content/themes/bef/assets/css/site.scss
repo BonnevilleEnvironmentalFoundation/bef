@@ -82,46 +82,46 @@ header {
   float: left;
 }
 
- 
+
 
 .meta-nav {
-    float: right;
-    margin: 0 0 30px 0;
-    width: 290px;
-    li {
-      float: left;
-      list-style-image: none;
-      padding:10px;
-      margin: 0;
-      text-align: center;
-      &.login {
-        background:#373938;
-        width: 60%;
-      }
-      &.cart {
-        background:#010101;
-        text-transform: uppercase;
-        width: 25%;
-      }
-      &.calculate {
-        clear: left;
-        background:#75c167;
-        text-transform: uppercase;
-        width: 60%;
-      }
-      &.buy {
-        background:#0081ab;
-        text-transform: uppercase;
-        width: 25%;
-      }
-      a {
-        display:inline-block;
-        color:#fff;
-        font-size: 13px;
-        font-family: 'DezenProBold', sans-serif;
-      }
+  float: right;
+  margin: 0 0 30px 0;
+  width: 290px;
+  li {
+    float: left;
+    list-style-image: none;
+    padding:10px;
+    margin: 0;
+    text-align: center;
+    &.login {
+      background:#373938;
+      width: 60%;
+    }
+    &.cart {
+      background:#010101;
+      text-transform: uppercase;
+      width: 25%;
+    }
+    &.calculate {
+      clear: left;
+      background:#75c167;
+      text-transform: uppercase;
+      width: 60%;
+    }
+    &.buy {
+      background:#0081ab;
+      text-transform: uppercase;
+      width: 25%;
+    }
+    a {
+      display:inline-block;
+      color:#fff;
+      font-size: 13px;
+      font-family: 'DezenProBold', sans-serif;
     }
   }
+}
 
 
 .landing header, .open-rfps header {
@@ -184,7 +184,7 @@ nav.main-nav {
       -ms-transition: all 0.2s;
       -o-transition: all 0.2s;
       transition: all 0.2s;
-      > a {
+      a {
         -webkit-transition: all .2s;
         -moz-transition: all .2s;
         -ms-transition: all .2s;
@@ -199,11 +199,8 @@ nav.main-nav {
         padding: 15px 15px 17px 15px;
         -webkit-border-radius: 10px 10px 0 0;
         -moz-border-radius: 10px 10px 0 0;
-        border-radius: 10px 10px 0 0;        
-        &:hover {
-          border-color: #ccc;
-          text-decoration: none;
-        }
+        border-radius: 10px 10px 0 0;
+        text-decoration: none;        
       }
       ul {
         position: absolute;
@@ -260,8 +257,14 @@ nav.main-nav {
       &:last-child {
         margin:0;
       }
+      &:hover {
+       > a {
+        color: #333;
+        background: #f3f1ee;            
+      }
     }
   }
+}
 }
 
 /* Sub Menu Headers */
