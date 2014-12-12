@@ -2104,6 +2104,12 @@ footer a {
 .margin15 {
   margin: 15px !important; }
 
+.marginR {
+  margin: 0 10px 10px 0 !important; }
+
+.marginL {
+  margin: 0 0 10px 10px !important; }
+
 /* GravityForms */
 /* ----------------------------------------- */
 .landing .form {
