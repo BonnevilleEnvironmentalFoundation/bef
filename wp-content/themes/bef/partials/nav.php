@@ -1,6 +1,6 @@
 <div class="container"> 
 
-	<a class="logo" href="<?php bloginfo('url');?>/"><img src="<?php bloginfo('template_directory');?>/assets/images/logo.png" width="70" height="70" alt=""></a>
+	<a class="logo" href="<?php bloginfo('url');?>/"><img src="<?php bloginfo('template_directory');?>/assets/images/bef-org-logo-tagline.jpg" alt=""></a>
 
 
 	<ul class="meta-nav">

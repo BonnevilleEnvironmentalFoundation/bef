@@ -100,6 +100,12 @@ function ctcModal() {
 		} 
 	}); 
 }
+
+function formPlaceholder() {
+	$('footer #loginform input[type="text"]').attr('placeholder', 'Username');
+$('footer #loginform input[type="password"]').attr('placeholder', 'Password');
+}
+
 // Initiate all scripts
 createFooterDropdown();
 clearInputValues();
@@ -107,6 +113,7 @@ createDownloadTabs();
 openVimeo();
 copyClipboard();
 ctcModal();
+formPlaceholder()
 //End Document Ready
 
 

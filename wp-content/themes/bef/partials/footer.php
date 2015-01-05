@@ -3,7 +3,7 @@
 <div class="container">
 <div class="row">
 <div class="columns footer first">
-<h2>BEF WEBSITES:</h2>
+<h4>BEF WEBSITES:</h4>
 <p><a onclick="window.open(this.href);return false;" href="http://store.b-e-f.org/">•  BEF Business Store</a></p>
 <p><a onclick="window.open(this.href);return false;" href="http://www.b-e-f.org/watersheds">•  Model Watershed Program</a></p>
 <p><a onclick="window.open(this.href);return false;" href="http://www.solar4rschools.org/">•  Solar 4R Schools&trade;</a></p>
@@ -12,7 +12,7 @@
 </div>
 
 <div class="columns footer">
-<h2>CONTACT US:</h2>
+<h4>CONTACT US:</h4>
 <p><strong>Bonneville Environmental Foundation</strong><br />
 240 SW 1st Avenue<br />
 Portland OR 97204<br />
@@ -20,7 +20,7 @@ phone: 503-248-1905 • fax: 503-248-1908<br />
 <a class="bold" href="mailto:info@b-e-f.org">email</a></p>
 </div>
 <div class="columns footer last">
-<h2>Find Us</h2>
+<h4>Find Us</h4>
 <ul class="social">
 <li class="fb"><a onclick="window.open(this.href);return false;" href="http://www.facebook.com/pages/Bonneville-Environmental-Foundation/27532836780"></a></li>
 <li class="li"><a onclick="window.open(this.href);return false;" href="http://us.linkedin.com/company/bonneville-environmental-foundation"></a></li>
@@ -29,9 +29,14 @@ phone: 503-248-1905 • fax: 503-248-1908<br />
 </div>
 
 </div>
+<div class="row footer-login">
+
+<h3>Partner Portal Login</h3>
+<?php wp_login_form(); ?>
+</div>
 <?php  wp_nav_menu( array ('menu' => 'Footer Nav', 'container' => 'nav','menu_class' => 'footer-nav','depth' => 0) ); ?>
 <?php  wp_nav_menu( array ('menu' => 'Footer Nav Secondary', 'container' => 'nav','menu_class' => 'footer-nav secondary','depth' => 0) ); ?>
-
+<?php  wp_nav_menu( array ('menu' => 'Footer Nav Tertiary', 'container' => 'nav','menu_class' => 'footer-nav tertiary','depth' => 0) ); ?>
 </div>
 </footer>
 </div>
