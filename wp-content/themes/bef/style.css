@@ -2037,7 +2037,7 @@ footer {
   margin: 20px 0 0;
   position: relative;
   top: 4px; }
-  .footer-nav.secondary {
+  .footer-nav.secondary, .footer-nav.tertiary {
     margin: 0; }
   .footer-nav li {
     display: inline;

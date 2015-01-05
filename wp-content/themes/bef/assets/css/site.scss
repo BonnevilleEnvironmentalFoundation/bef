@@ -960,7 +960,7 @@ footer {
   margin: 20px 0 0;
   position: relative;
   top: 4px;
-  &.secondary {
+  &.secondary,&.tertiary {
     margin: 0;
   }
   li {

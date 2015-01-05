@@ -15,7 +15,7 @@ Template Name: Page - Project Portfolio - All REC Offsets
 		<?php endwhile; ?>
 		<?php endif;?>
 		<?php wp_reset_query(); ?>
-		<?php wp_nav_menu( array ('menu' => 'REC Project Portfolio', 'container' => '','menu_class' => 'tab-nav','depth' => 0) ); ?>
+		<?php wp_nav_menu( array ('menu' => 'REC Projects', 'container' => '','menu_class' => 'tab-nav','depth' => 0) ); ?>
 <?php $posts = new WP_Query(array( 
    'post_type' => 'bgmp',
    'orderby' => 'meta_value_num',
