@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 	<div class="four columns alpha omega subnav">
-		<?php wp_nav_menu( array ('menu' => 'REC', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
+		<?php if( has_term( 'rec', 'bgmp-category' )): ?>
+		<?php wp_nav_menu( array ('menu' => 'REC Projects', 'container' => '','menu_class' => 'tab-nav','depth' => 0) ); ?>
+		<?php else: ?>
+		<?php endif; ?>
 	</div>
 	<div class="twelve columns">
 		<?php $slideshow = get_field('slideshow');
