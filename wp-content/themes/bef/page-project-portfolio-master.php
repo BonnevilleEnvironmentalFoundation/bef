@@ -11,7 +11,7 @@ Template Name: Page - Project Portfolio Master
 <div class="four columns subnav">
 	
 	<h4>Projects and Programs</h4>
-<?php wp_nav_menu( array ('menu' => 'REC', 'container' => '','depth' => 0) ); ?>
+<?php wp_nav_menu( array ('menu' => 'Projects and Programs', 'container' => '','depth' => 0) ); ?>
 </div>
 	
 	<div class="eight columns">
