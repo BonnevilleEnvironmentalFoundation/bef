@@ -670,6 +670,14 @@ nav.main-nav {
   }
 }
 
+.back-projects {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px dotted #666;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
 .single-bgmp .uppercase, .project-entry a {
   font-weight: bold;
 }
@@ -731,9 +739,9 @@ nav.main-nav {
 .single .slideshow-wrap {
   padding: 0;
   margin-bottom: 30px;
-  max-width: 496px;
-  height: 315px;
+  height: 375px;
   position: relative;
+  width: 100% !important;
 }
 
 /* Publications */
