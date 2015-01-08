@@ -5,7 +5,7 @@
 	<div class="four columns">
 	<div class="four columns alpha omega subnav">
 		<h4>Projects and Programs</h4>
-		<?php wp_nav_menu( array ('menu' => 'Carbon Offsets', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
+		<?php wp_nav_menu( array ('menu' => 'Projects and Programs', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
 	</div>
 		</div> 
 	<div class="twelve columns">
