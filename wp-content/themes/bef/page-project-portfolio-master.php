@@ -29,9 +29,8 @@ Template Name: Page - Project Portfolio Master
 <?php $slug = $project_term->slug;?>
 <?php $posts = new WP_Query(array( 
    'post_type' => 'bgmp',
-   'orderby' => 'meta_value_num',
-	 'meta_key' => 'bgmp_zIndex',
-   'order' => 'DESC',
+   'orderby' => 'title',
+   'order' => 'ASC',
 	 'bgmp-category' => $slug,
    'posts_per_page' => -1
 )); ?>
@@ -45,14 +44,14 @@ if ($image):?>
 </div>
 <div class="project-info">
 <h4><?php the_title();?></h4>
-<p class="uppercase"><?php the_field('location');?></p>
+<p><strong><?php the_field('location');?></strong></p>
 <p><?php the_field('snippet');?></p>
 <p><a href="<?php the_permalink();?>">Read full profile</a></p>
 </div>
 <?php else:?>
 <div class="project-info no-image">
 <h4><?php the_title();?></h4>
-<p class="uppercase"><?php the_field('location');?></p>
+<p><strong><?php the_field('location');?></strong></p>
 <p><?php the_field('snippet');?></p>
 <p><a href="<?php the_permalink();?>">Read full profile</a></p>
 </div>
