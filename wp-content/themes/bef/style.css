@@ -1378,7 +1378,19 @@ header {
     .meta-nav li.cart {
       background: #010101;
       text-transform: uppercase;
-      width: 25%; }
+      width: 25%;
+      position: relative; }
+      .meta-nav li.cart a {
+        padding-left: 35px; }
+        .meta-nav li.cart a:before {
+          content: '';
+          width: 30px;
+          height: 24px;
+          display: block;
+          background: url(assets/images/icon-cart.png) 0 0 no-repeat;
+          position: absolute;
+          left: 12px;
+          top: 5px; }
     .meta-nav li.calculate {
       clear: left;
       background: #75c167;
@@ -2031,7 +2043,7 @@ footer {
     font-size: 11px;
     margin-bottom: 0px;
     line-height: 16px; }
-  footer h4 {
+  footer p.header {
     font-family: "dezen", sans-serif;
     font-size: 12px;
     border-bottom: 1px dotted #666666;
@@ -2057,10 +2069,8 @@ footer {
   position: relative;
   padding: 20px 30px;
   margin-top: 20px; }
-  .footer-login h3 {
-    font-family: "DezenProBold", Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    text-transform: uppercase; }
+  .footer-login p.header {
+    display: inline-block; }
   .footer-login #loginform label {
     display: none; }
   .footer-login #loginform p {

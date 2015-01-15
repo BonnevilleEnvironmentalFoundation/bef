@@ -4,10 +4,10 @@
 
 
 	<ul class="meta-nav">
-		<li class="login"><a href="/contact-us/">LOGIN</a> | <a href="#">Create an Account</a></li>
-		<li class="cart"><a onclick="window.open(this.href);return false;" href="http://store.b-e-f.org/make-a-purchase">CART</a></li>
-		<li class="calculate"><a onclick="window.open(this.href);return false;" href="http://store.b-e-f.org/">calculate your footprint</a></li>
-		<li class="buy"><a onclick="window.open(this.href);return false;" href="http://store.b-e-f.org/make-a-purchase">BUY NOW</a></li>
+		<li class="login"><a href="https://store.b-e-f.org/login">LOGIN</a> | <a href="https://store.b-e-f.org/signup">Create an Account</a></li>
+		<li class="cart"><a href="http://store.b-e-f.org/cart">CART</a></li>
+		<li class="calculate"><a href="http://store.b-e-f.org/calculate-your-footprint/">calculate your footprint</a></li>
+		<li class="buy"><a href="http://store.b-e-f.org/make-a-purchase">BUY NOW</a></li>
 	</ul>
 
 	<?php wp_nav_menu( array(
