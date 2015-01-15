@@ -64,7 +64,7 @@ Through a robust consumer engagement campaign directed by Participant Media and 
 <div class="row map-container">
     <div class="map-header">Change The Course<br>
 flow restoration projects</div>
-		<img class="map" src="<?php bloginfo('template_directory'); ?>/images/ctc-map.gif" alt="">
+		<img class="map" src="<?php bloginfo('template_directory'); ?>/assets/images/ctc-map.gif" alt="">
 		<a title="Working with Pronatura Noroeste and the Colorado River Delta Water Trust, Change the Course has supported an initial WRC pilot project that restores approximately 39 million gallons per year to help recover critically dewatered areas of the Delta." class="colorado" href="#"><img src="<?php bloginfo('template_directory'); ?>/images/map-image-colorado.png" alt=""></a>
 		<a title="Change the Course partnered with The Nature Conservancy to support a project that works collaboratively with irrigators to improve irrigation systems and restore hundreds of thousands of gallons of water to dewatered sections of the Verde river—Arizona’s only designated Wild and Scenic river." class="verde" href="#"><img src="<?php bloginfo('template_directory'); ?>/images/map-image-verde.png" alt=""></a>
 		<a title="Change the Course partnered with the Colorado Water Trust to support a project that restored significant flow to the Yampa during the 2012 summer drought (and is in development for summer of 2013), staving off a recreation closure, supporting the local economy and protecting native and sport fisheries." class="yampa" href="#"><img src="<?php bloginfo('template_directory'); ?>/images/map-image-yampa.png" alt=""></a>
