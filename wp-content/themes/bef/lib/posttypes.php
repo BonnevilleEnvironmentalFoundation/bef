@@ -129,7 +129,7 @@ function asset_post_type() {
 		'label'               => __( 'Asset', 'text_domain' ),
 		'description'         => __( 'Asset information pages', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array('title'),
+		'supports'            => array('title', 'thumbnail'),
 		'taxonomies'          => array(),
 		'hierarchical'        => false,
 		'public'              => true,

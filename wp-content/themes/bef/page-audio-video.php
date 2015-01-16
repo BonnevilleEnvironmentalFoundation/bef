@@ -16,14 +16,12 @@ Template Name: Page - Video Library
 		<?php endif;?>
 		<?php wp_reset_query(); ?>
 
-		<div class="profile tab-content">
-			<?php $posts = new WP_Query(array( 
-   'post_type' => 'video',
-   'orderby' => 'date',
-   'order' => 'DESC',
-   'posts_per_page' => 99
-)); ?>
-			<?php if ( $posts->have_posts() ) : while ( $posts->have_posts() ) : $posts->the_post(); ?>
+	
+	<?php $posts = get_field('videos_and_assets'); ?>
+	<?php if ( $posts ): ?>
+
+	    <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+
 			<div class="row project-entry"> 
 				<div class="project-image">
 					<?php if(has_post_thumbnail()) : the_post_thumbnail(); else: echo 'Featured Image'; endif; ?>
@@ -32,12 +30,14 @@ Template Name: Page - Video Library
 					<h4><?php echo get_field('title') ?></h4>
 					<?php echo get_field('description') ?>
 				</div>
-				<p><a target="_blank" href="<?php the_field('url');?>" class="button">Go To Link</a></p>
+				<?php $url = get_field('url');  
+				$file_url = get_field('file_url'); ?>
+				<p><a target="_blank" href="<?php if($url):echo $url;else:echo $file_url;endif;?>" class="button">Go To Link</a></p>
 				<span class='st_sharethis' st_title='<?php the_field('title', $post_object->ID); ?>' st_url='<?php the_field('file_url', $post_object->ID); ?>' displayText='ShareThis'></span> 
 			</div>
-			<?php endwhile; ?>
-			<?php endif;?>
-		<?php wp_reset_query(); ?>
+	    <?php endforeach; wp_reset_postdata(); ?>
+
+	<?php endif; ?>
 		</div>
 	</div>
 	<?php get_template_part('partials/sidebar'); ?>
