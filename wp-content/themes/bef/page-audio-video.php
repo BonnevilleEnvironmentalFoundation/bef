@@ -38,7 +38,7 @@ Template Name: Page - Video Library
 	    <?php endforeach; wp_reset_postdata(); ?>
 
 	<?php endif; ?>
-		</div>
+	
 	</div>
 	<?php get_template_part('partials/sidebar'); ?>
 	<?php get_template_part('partials/footer'); ?>
