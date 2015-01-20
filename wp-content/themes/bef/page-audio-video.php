@@ -24,7 +24,7 @@ Template Name: Page - Video Library
 
 			<div class="row project-entry"> 
 				<div class="project-image">
-					<?php if(has_post_thumbnail()) : the_post_thumbnail(); else: echo 'Featured Image'; endif; ?>
+					<?php if(has_post_thumbnail()) : the_post_thumbnail(); else: echo '<img src="'.get_field('asset_image').'"/>'; endif; ?>
 				</div>
 				<div class="project-info">
 					<h4><?php echo get_field('title') ?></h4>
