@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php get_template_part('partials/breadcrumbs'); ?>
 <div class="four columns subnav">
 	<?php wp_nav_menu( array ('menu' => 'Our Partners', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
