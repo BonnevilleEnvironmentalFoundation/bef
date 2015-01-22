@@ -20,7 +20,7 @@ Template Name: Page - Publications
 			<li><a href="#project-profiles">RENEWABLE ENERGY PROJECT PROFILES</a></li>
 			<li><a href="#energy">RENEWABLE ENERGY PUBLICATIONS</a></li>
 			<li><br />
-<a href="#watershed">WATERSHED PUBLICATIONS</a></li>
+<a href="#watershed">Freshwater Restoration Publications</a></li>
 		</ul>
 		<div class="profile tab-content" role="main" id="project-profiles">
 		<?php $posts = new WP_Query(array( 
@@ -73,7 +73,7 @@ Template Name: Page - Publications
 		<div class="profile tab-content" role="main" id="watershed">
 		<?php $posts = new WP_Query(array( 
    'post_type' => 'publication',
-	 'type' => 'watershed-publications',
+	 'type' => 'freshwater-restoration-publications',
    'orderby' => 'date',
    'order' => 'DESC',
    'posts_per_page' => 99

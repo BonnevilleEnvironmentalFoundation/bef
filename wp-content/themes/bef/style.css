@@ -2122,6 +2122,13 @@ footer {
     background: linear-gradient(to bottom, white 50%, white 50%, #cfcdc8 50%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#cfcdc8',GradientType=0 ); }
 
+.login-form {
+  position: relative; }
+  .login-form .login-failed {
+    position: absolute;
+    top: 8%;
+    right: 0; }
+
 .social {
   margin: 10px 0; }
   .social li {

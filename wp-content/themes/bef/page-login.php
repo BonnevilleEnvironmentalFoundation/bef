@@ -17,6 +17,7 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 </div>
 <div class="clearfix"></div>
 <div class="eight offset-by-four columns">
+	a
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <?php the_content();?>
 <?php endwhile; ?>
@@ -33,7 +34,17 @@ if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned
 <?php endwhile; ?>
 <?php endif;?>
 <?php wp_reset_query(); ?>
-<?php wp_login_form(); ?>
+<div class="login-form">
+
+	<?php wp_login_form(); ?>
+
+		<?php if($_GET['login'] == 'failed'){ ?>
+	<div class="login-failed">
+    <p style="color:red">Login Failed, incorrect username or password</p>
+</div>
+<?php } ?>
+
+</div>
 <?php gravity_form(12, false, false, false, '', true); ?>
 <?php edit_post_link( __( 'Edit Page'), '<span class="edit-link">', '</span>' ); ?>
 </div>

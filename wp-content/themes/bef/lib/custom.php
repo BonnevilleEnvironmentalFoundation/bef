@@ -96,10 +96,12 @@ return $args;
 }
 add_filter( 'tiny_mce_before_init', 'unhide_kitchensink' );
 
-function wpa_change_date_structure(){
-    global $wp_rewrite;
-    $wp_rewrite->date_structure = 'date/%year%/%monthnum%/%day%';
+// hook failed login
+add_action('wp_login_failed', 'redirect_login_failed');
+function redirect_login_failed() {
+    wp_redirect(get_bloginfo('url') . '/partner-login/?login=failed' );
 }
-add_action( 'init', 'wpa_change_date_structure' );
+
+
 
 ?>

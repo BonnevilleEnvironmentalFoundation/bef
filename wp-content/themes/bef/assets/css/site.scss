@@ -1063,6 +1063,15 @@ footer {
   }
 }
 
+.login-form {
+  position: relative;
+  .login-failed {
+    position: absolute;
+    top:8%;
+    right: 0;
+  }
+}
+
 .social {
   margin: 10px 0;
   li {
