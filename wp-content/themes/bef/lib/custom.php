@@ -96,4 +96,10 @@ return $args;
 }
 add_filter( 'tiny_mce_before_init', 'unhide_kitchensink' );
 
+function wpa_change_date_structure(){
+    global $wp_rewrite;
+    $wp_rewrite->date_structure = 'date/%year%/%monthnum%/%day%';
+}
+add_action( 'init', 'wpa_change_date_structure' );
+
 ?>
