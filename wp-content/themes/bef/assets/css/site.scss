@@ -383,6 +383,12 @@ nav.main-nav {
   padding-top: 0;
 }
 
+.home.page {
+ .slideshow-wrap {
+  height: 450px;
+ }
+}
+
 .home-banner {
   width: 983px;
   background: #73c167;
@@ -399,13 +405,16 @@ nav.main-nav {
   }
 }
 
+.callouts-wrap {
+    border-bottom:1px dotted #666;
+}
 .homepage-callouts {
   width: 278px;
   float: left;
   display: inline;
   margin-right: 50px;
   .content {
-    padding: 10px 15px;
+    padding:30px 15px 0 15px;
   }
   &:first-child {
     margin-left: 10px;

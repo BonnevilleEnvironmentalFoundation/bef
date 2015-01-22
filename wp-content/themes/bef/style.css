@@ -1592,6 +1592,9 @@ nav.main-nav {
 .home-temp .main {
   padding-top: 0; }
 
+.home.page .slideshow-wrap {
+  height: 450px; }
+
 .home-banner {
   width: 983px;
   background: #73c167;
@@ -1606,13 +1609,16 @@ nav.main-nav {
     float: right;
     margin: 28px 110px 0 0; }
 
+.callouts-wrap {
+  border-bottom: 1px dotted #666666; }
+
 .homepage-callouts {
   width: 278px;
   float: left;
   display: inline;
   margin-right: 50px; }
   .homepage-callouts .content {
-    padding: 10px 15px; }
+    padding: 30px 15px 0 15px; }
   .homepage-callouts:first-child {
     margin-left: 10px; }
   .homepage-callouts:last-child {

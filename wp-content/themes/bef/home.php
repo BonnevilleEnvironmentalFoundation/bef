@@ -34,21 +34,6 @@ Template Name: Homepage
 </div>
 </div>
 
-<div class="row">
-
-	<?php if(get_field('homepage_callouts', 780)): ?>
-	<?php while(the_repeater_field('homepage_callouts', 780)): ?>
-	<div class="homepage-callouts"> 
-		<div class="content">
-			<?php the_sub_field('text');?>
-		</div>
-	</div>
-<?php endwhile;?>
-<?php endif;?>
-
-</div>
-
-
 <div class="homepage-content-banner">
 	<div class="row">
 		<div class="fourteen offset-by-one columns">
@@ -59,6 +44,37 @@ Template Name: Homepage
 		</div>
 	</div>
 </div>
+
+<div class="row callouts-wrap">
+
+	<?php if(get_field('homepage_callouts', 780)): ?>
+	<?php while(the_repeater_field('homepage_callouts', 780)): ?>
+	<div class="homepage-callouts primary"> 
+		<div class="content">
+			<?php the_sub_field('text');?>
+		</div>
+	</div>
+<?php endwhile;?>
+<?php endif;?>
+
+</div>
+
+<div class="row">
+
+	<?php if(get_field('homepage_secondary_callouts', 780)): ?>
+	<?php while(the_repeater_field('homepage_secondary_callouts', 780)): ?>
+	<div class="homepage-callouts secondary"> 
+		<div class="content">
+			<?php the_sub_field('text');?>
+		</div>
+	</div>
+<?php endwhile;?>
+<?php endif;?>
+
+</div>
+
+
+
 <div class="clearfix"></div>
 
 <?php get_template_part('partials/footer'); ?>
