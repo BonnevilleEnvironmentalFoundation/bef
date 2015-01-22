@@ -12,4 +12,5 @@ if ($nav_menu): //if using depracated nav menu field ?>
 <?php else: //if neither, show empty column ?>
 	<div class="four columns"> 
 		&nbsp;
-	</div>
+	<?php endif; ?>
+</div>
