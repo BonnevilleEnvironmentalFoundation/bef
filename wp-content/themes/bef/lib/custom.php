@@ -96,12 +96,17 @@ return $args;
 }
 add_filter( 'tiny_mce_before_init', 'unhide_kitchensink' );
 
-// hook failed login
+// Failed Login hook
 add_action('wp_login_failed', 'redirect_login_failed');
 function redirect_login_failed() {
     wp_redirect(get_bloginfo('url') . '/partner-login/?login=failed' );
 }
 
-
+// Clean up the Dashboard menus
+function remove_menus(){
+  remove_menu_page( 'edit-comments.php' );          //Comments
+  remove_menu_page( 'link-manager.php' );          //Link Manager
+}
+add_action( 'admin_menu', 'remove_menus' );
 
 ?>
