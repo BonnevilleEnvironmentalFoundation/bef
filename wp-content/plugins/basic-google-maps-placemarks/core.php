@@ -581,6 +581,7 @@ if( !class_exists( 'BasicGoogleMapsPlacemarks' ) )
 					'public'			=> true,
 					'menu_position'		=> 12,
 					'hierarchical'		=> false,
+					'menu_icon'=> 'dashicons-location',	
 					'capability_type'	=> 'post',
 					'rewrite'			=> array( 'slug' => 'project-portfolio', 'with_front' => false ),
 					'query_var'			=> true,
