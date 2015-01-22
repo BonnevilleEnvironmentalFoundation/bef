@@ -9,7 +9,7 @@ Template Name: Homepage
 	<div id="prev">PREV</div>
 	<div id="next">NEXT</div>
 	<div class="cycle-slideshow" data-cycle-pause-on-hover="true"data-cycle-prev="#prev"
-	data-cycle-next="#next" data-cycle-speed="1000" data-cycle-timeout="3000"data-cycle-slides="> a"><?php $posts = new WP_Query(array( 
+	data-cycle-next="#next" data-cycle-speed="1000" data-cycle-timeout="4000"data-cycle-slides="> a"><?php $posts = new WP_Query(array( 
 		'post_type' => 'slideshow',
 		'orderby' => 'date',
 		'order' => 'DESC',

@@ -29,7 +29,7 @@ Template Name: Page - Simple
 					<div id="prev">PREV</div>
 					<div id="next">NEXT</div>
 					<div class="cycle-slideshow" data-cycle-pause-on-hover="true"data-cycle-prev="#prev"
-					data-cycle-next="#next" data-cycle-speed="1000" data-cycle-timeout="3000">
+					data-cycle-next="#next" data-cycle-speed="1000" data-cycle-timeout="5000">
 					<?php if ( get_field('optional_slideshow') ) : ?>
 
 					<?php for( $i = 0; has_sub_field('optional_slideshow'); $i++ ) : ?>

@@ -1521,6 +1521,8 @@ nav.main-nav {
   background: url(assets/images/subnav-divide.gif) no-repeat 100% 0%; }
   .subnav ul li.current-menu-item a, .subnav ul li.current-page-ancestor a {
     color: #666; }
+  .subnav h4 {
+    text-transform: none; }
   .subnav h3 {
     font-size: 12px;
     font-weight: bold;

@@ -1,5 +1,5 @@
 <?php 
-$nav_menu = get_field('nav_menu')
+$nav_menu = get_field('nav_menu');
 if ($nav_menu):?>
 <div class="four columns subnav">
 	<?php the_field('nav_menu');

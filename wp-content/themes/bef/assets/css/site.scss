@@ -291,6 +291,9 @@ nav.main-nav {
     }
   }
   background: url(assets/images/subnav-divide.gif) no-repeat 100% 0%;
+  h4 {
+    text-transform: none;
+  }
   h3 {
     font-size: 12px;
     font-weight: bold;
