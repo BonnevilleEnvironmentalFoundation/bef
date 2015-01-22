@@ -1,19 +1,10 @@
 <?php get_header(); ?>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-<div class="breadcrumbs sixteen columns">
-	<p>
-		<?php if(function_exists('bcn_display'))
-    {
-        bcn_display();
-    }?>
-	</p>
-</div>
+<?php get_template_part('partials/breadcrumbs'); ?>
 <div class="four columns subnav">
-	<?php wp_nav_menu( array ('menu' => 'Our Work', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
+	<?php wp_nav_menu( array ('menu' => 'Our Partners', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
 </div>
 <div class="eight columns">
-	<?php wp_nav_menu( array ('menu' => 'Partner Type', 'container' => 'nav','menu_class' => 'tab-nav','depth' => 0) ); ?>
+	
 	<?php $slideshow = get_field('slideshow');
 			$single_image = get_field('single_image');?>
 	<?php if($slideshow) : ?>

@@ -8,23 +8,20 @@ Template Name: Page - Partner Profiles
 	<?php get_template_part('partials/breadcrumbs'); ?>
 
 	<div class="four columns subnav">
-		<?php wp_nav_menu( array ('menu' => 'Our Work', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
+		<?php wp_nav_menu( array ('menu' => 'Our Partners', 'container' => 'nav','menu_class' => '','depth' => 0) ); ?>
 	</div>
 	
 	<div class="eight columns">
-<?php /* wp_nav_menu( array ('menu' => 'Partner Profile', 'container' => 'nav','menu_class' => 'tab-nav','depth' => 0) );*/ ?>
-
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<?php the_content();?>
 		<?php endwhile; ?>
 		<?php endif;?>
 		<?php wp_reset_query(); ?>
-	<?php wp_nav_menu( array ('menu' => 'Partner Type', 'container' => 'nav','menu_class' => 'tab-nav','depth' => 0) ); ?>		
 <?php $posts = new WP_Query(array( 
    'post_type' => 'partner',
-   'orderby' => 'date',
-   'order' => 'DESC',
-   'posts_per_page' => 99
+   'orderby' => 'title',
+   'order' => 'ASC',
+   'posts_per_page' => -1
 )); ?>
 
 <p></p>
@@ -36,7 +33,7 @@ Template Name: Page - Partner Profiles
 <div class="partner-info">
 <img src="<?php the_field('logo');?>" />
 <p><?php the_field('snippet');?></p>
-<p><a onclick="window.open(this.href);return false;" href="<?php the_permalink();?>">Read full partner profile</a></p>
+<p><a href="<?php the_permalink();?>">Read full partner profile</a></p>
 </div>
 </div>
 <?php endwhile; ?>
