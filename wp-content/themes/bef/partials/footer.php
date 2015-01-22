@@ -4,7 +4,7 @@
 <div class="row">
 <div class="columns footer first">
 <p class="header">BEF WEBSITES:</p>
-<p><a onclick="window.open(this.href);return false;" href="http://store.b-e-f.org/">•  BEF Business Store</a></p>
+<p><a href="http://store.b-e-f.org/">•  BEF Business Store</a></p>
 <p><a onclick="window.open(this.href);return false;" href="http://store.shrinkyourfoot.org">•  Shrink Your Foot Residential Store</a></p>
 <p><a onclick="window.open(this.href);return false;" href="http://www.b-e-f.org/watersheds">•  Model Watershed Program</a></p>
 <p><a onclick="window.open(this.href);return false;" href="http://www.solar4rschools.org/">•  Solar 4R Schools&trade;</a></p>
